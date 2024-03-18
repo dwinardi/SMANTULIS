@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>SMAN 1 Haurgeulis</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo-smantulis.png">
+    <style>
+        .carousel-open:checked + .carousel-item {
+            position: static;
+            opacity: 100;
+        }
+        .carousel-item {
+            -webkit-transition: opacity 0.6s ease-out;
+            transition: opacity 0.6s ease-out;
+        }
+        #carousel-1:checked ~ .control-1,
+        #carousel-2:checked ~ .control-2,
+        #carousel-3:checked ~ .control-3 {
+            display: block;
+        }
+        .carousel-indicators {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 2%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+        }
+        #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+        #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+        #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+            color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+        }
+        .bg-gradient-new {
+        background-color: #A9C8EE;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23A9C8EE'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23d4e4f7'/%3E%3Cstop offset='1' stop-color='%23A9C8EE'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg %3E%3Cg transform='translate(0 75)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform=''%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.53' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        }
+        .bg-smantulis {
+        background-color: #f69915;
+        }
+        .bg-wave {
+          background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='120' height='40' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M-50.129 12.685C-33.346 12.358-16.786 4.918 0 5c16.787.082 43.213 10 60 10s43.213-9.918 60-10c16.786-.082 33.346 7.358 50.129 7.685'  stroke-width='0.5' stroke='hsla(33, 90%, 65%, 1)' fill='none'/><path d='M-50.129 32.685C-33.346 32.358-16.786 24.918 0 25c16.787.082 43.213 10 60 10s43.213-9.918 60-10c16.786-.082 33.346 7.358 50.129 7.685'  stroke-width='0.5' stroke='hsla(231, 48%, 48%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-240,0)' fill='url(%23a)'/></svg>")        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="transition duration-500 font-normal bg-gradient-new">
+    
+    <header class=" sticky top-0 z-5">
+        <!-- component -->
+
+<div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-8000">
+  <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div class="p-4 flex flex-row items-center justify-between">
+        <a class="navbar-brand" href="#">
+            <img src="/smantulis.png" alt="" width="50" height="50">
+        </a>
+      <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline ml-2">SMAN 1 Haurgeulis</a>
+      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+      <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-orange-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="#">Home</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="#kepala-sekolah">Kepala Sekolah</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="#sejarah">Sejarah</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="gtk.html">GTK</a>
+      <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://info.sman1haurgeulis.sch.id/" target="_blank">SKL</a> -->
+      <!--<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://sman1haurgeulis.sch.id/ppdb2023.html" target="_blank">PPDB 2023 Tahap I</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://sman1haurgeulis.sch.id/ppdb2023_2.html" target="_blank">PPDB 2023 Tahap II</a>
+      </-->
+    </nav>
+  </div>
+</div>
+    </header>
+    <section>
+        <div class="carousel relative bg-white">
+            <div class="carousel-inner relative w-full">
+              <!--Slide 1-->
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item absolute opacity-0" style="height:auto;">
+                    <img src="./img/sl-1.jpg" alt="">
+                </div>
+                <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+                
+                <!--Slide 2-->
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:auto;">
+                    <img src="./img/sl-2.jpg" alt="">
+                </div>
+                <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+                
+                <!--Slide 3-->
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:auto;">
+                    <img src="./img/sl-3.jpg" alt="">
+                </div>
+                <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+        
+                <!-- Add additional indicators for each slide-->
+                <ol class="carousel-indicators">
+                    <li class="inline-block mr-3">
+                        <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                </ol>
+                
+            </div>
+        </div>
+    </section>
+    <section>
+      <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-wave py-2">
+  <div class="max-w-5xl mx-auto border-0 shadow-xl sm:mt-0 md:mt-8 mb-8 md:rounded-xl p-4 bg-smantulis">
+    <h2 class="font-extrabold tracking-tight text-blue-900 text-3xl text-center mx-auto">
+      <span class="block mx-auto text-center ">SMA NEGERI 1 HAURGEULIS</span>
+    </h2>
+  </div>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 m-4">
+    <div class="p-6 bg-white">
+    <img class="rounded-lg shadow-lg" src="./img/smantulis.gif" alt="">
+    </div>
+    <div class="p-6 bg-white">
+      <img class="rounded-lg shadow-lg" src="./img/kcd.gif" alt="">
+    </div>
+    <div class="p-6 bg-white">
+      <img class="rounded-lg shadow-lg" src="./img/jabar.gif" alt="">
+    </div>
+    <div class="p-6 bg-white">
+      <img class="rounded-lg shadow-lg" src="./img/kemdikbud.gif" alt="">
+    </div>
+  </div>
+  
+  <div class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100" id="kepala-sekolah">
+    <div class="max-w-full border-b-2 shadow-sm mt-1 mb-1 p-2 border-blue-900 bg-gradient-to-r from-blue-100 to-white rounded-t-md">
+      <h3 class="font-bold tracking-tight text-blue-900 text-2xl pl-2">
+        <span class="block">Kepala Sekolah</span>
+      </h3>
+    </div>
+    <div class="max-w-full border-0 shadow-sm mt-1 mb-1 p-2 bg-white rounded-md flex">
+      <div class="text-justify font-sans tracking-tight text-blue-900 p-4 max-w-2xl">
+        <div class="mx-auto block md:hidden bottom-0 mb-8" style="width: fit-content;">
+          <img src="./img/kepsek.png" alt="" class="bottom-0 rounded-lg shadow-lg" style="width: 300px;">
+          <!-- <span class="block bg-blue-200 font-bold text-lg text-center p-2 rounded-full mt-2 shadow-lg">Drs. OTONG WAHYUDIN, M.Pd</span> -->
+        </div>
+        <p class="mb-4 text-left">Assalamu'alaikum Warahmatullahi Wabarakatuh,</p>
+        <p class="mb-4">Saya ucapkan Selamat Datang di Website resmi SMA Negeri 1 Haurgeulis, Indramayu, Jawa Barat.</p>
+        <p class="mb-4">Seraya memanjatkan puji syukur ke hadirat Allah Subhanahu Wata'ala yang telah memberikan karunia dan kenikmatan yang tak terhitung banyaknya, tidak lupa kita haturkan shalawat serta salam kepada Nabi Muhammad Shallallahu 'alaihi wasallam yang membawa dienul Islam sehingga kita bisa merasakan mana yang hak dan mana yang bathil.</p>
+        <p class="mb-4">Disertai perasaan bangga saya menuliskan kata sambutan ini, dalam rangka update Website Sekolah, baik dari sisi pengelolaan maupun isinya. Di era global dan pesatnya Teknologi Informasi dan Komunikasi ini, tidak dipungkiri bahwa keberadaan sebuah website untuk suatu organisasi, termasuk SMA Negeri 1 Haurgeulis, sangatlah penting. Wahana website dapat digunakan sebagai media penyebarluasan informasi dari sekolah, yang memang harus diketahui oleh stake holder secara luas. Disamping itu, website juga dapat menjadi sarana promosi sekolah yang cukup efektif. Berbagai kegiatan positif sekolah dapat diunggah, disertai video maupun gambar-gambar yang relevan, sehingga masyarakat dapat mengetahui prestasi-prestasi yang telah berhasil diraih oleh siswa siswi SMA Negeri 1 Haurgeulis.</p>
+        <p class="mb-4">Website juga dapat dijadikan sarana komunikasi antara sekolah dengan para alumni. Bahkan alumni dapat memanfaatkan website sekolah untuk kolaborasi, sehingga terbentuk ikatan alumni yang makin besar dan kuat. Sekolah menyadari bahwa alumni merupakan salah satu potensi yang apabila digali dan dikelola dengan baik dan benar akan mampu memberikan kontribusi yang sangat positif kepada sekolah. Oleh karena itu, saya sangat berharap, melalui website ini, himpunan alumni SMA Negeri 1 Haurgeulis akan semakin berkembang dan solid, sehingga pada waktunya nanti dapat memberikan kontribusi bagai kemajuan almamater tercinta untuk mencapai SMA Negeri 1 Haurgeulis yang lebih maju dan semakin terdepan,Terima kasih.</p>
+        <p class="mb-4 text-left">Wassalamu'alaikum Warahmatullahi Wabarakatuh.</p>
+      </div>
+      <div class="mx-auto hidden lg:block bottom-0 align-bottom" style="width: fit-content;">
+        <img src="./img/kepsek.png" alt="" class="bottom-0 rounded-lg shadow-lg" style="width: 300px;">
+        <!-- <span class="block bg-blue-200 font-bold text-lg text-center p-2 rounded-full mt-2 shadow-lg">Drs. OTONG WAHYUDIN, M.Pd</span> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100"  id="sejarah">
+    <div class="max-w-full border-b-2 shadow-sm mt-1 mb-1 p-2 border-blue-900 bg-gradient-to-r from-blue-100 to-white rounded-t-md">
+      <h3 class="font-bold tracking-tight text-blue-900 text-2xl pl-2">
+        <span class="block">Sejarah SMAN 1 HAURGEULIS</span>
+      </h3>
+    </div>
+    <div class="mx-auto block mt-8 md:hidden bottom-0 mb-2 w-full" style="width: fit-content;">
+      <img src="./img/upacara.jpg" alt="" class="bottom-0 rounded-lg shadow-lg mb-4" style="width: 300px;">
+      <img src="./img/s3.jpg" alt="" class="bottom-0 rounded-lg shadow-lg mb-4" style="width: 300px;">
+      <!-- <span class="block bg-blue-200 font-bold text-lg text-center p-2 rounded-full mt-2 shadow-lg">Drs. OTONG WAHYUDIN, M.Pd</span> -->
+    </div>
+    <div class="flex">
+      <div class="mx-auto hidden lg:block bottom-0 align-bottom max-w-7xl lg:basis-1/2" style="width: fit-content;">
+        <img src="./img/upacara.jpg" alt="" class="bottom-0 rounded-lg shadow-lg m-4">
+        <img src="./img/s3.jpg" alt="" class="bottom-0 rounded-lg shadow-lg m-4">
+        <!-- <span class="block bg-blue-200 font-bold text-lg text-center p-2 rounded-full mt-2 shadow-lg">Drs. OTONG WAHYUDIN, M.Pd</span> -->
+      </div>
+      <div class="text-justify font-sans tracking-tight text-blue-900 p-4 max-w-5xl lg:basis-1/2 m-4 mb-0">
+        <p class="mb-4">SMA Negeri 1 Haurgeulis terletak di Jalan Budi Utomo no. 7 Desa Sukajati, Kecamatan Haurgeulis, Kabupaten Indramayu, Provinsi Jawa Barat, kode pos 45264. Sekolah ini berdiri pada tahun 1995, menjadi kelas jauh dari SMA Negeri 1 Anjatan. Dengan terbitnya SK Menteri Pendidikan dan Kebudayaan nomor 001A/o/1999 tentang Pembukaan dan Penegerian Sekolah, Tanggal 15 Januari 1999 yang ditandatangani oleh Kepala Biro Hukum dan Hubungan Masyarakat Kemdikbud, maka SMA Negeri 1 Haurgeulis secara resmi mandiri dengan kepala sekolah pertama Bapak (Alm) Drs. Junaedi, M.Pd. </p>
+        <p class="mb-4">SMA Negeri 1 Haurgeulis memiliki luas lahan awalnya 8.270 M2, no sertifikat AE 279240 – 10.24.01.14.1.00299 tanggal 6 April 1995 yang ditandatangani oleh Ir. Gembira Peranginangin.</p>
+        <p class="mb-4">Saat ini memiliki luas lahan 10.020 M2. SMA Negeri 1 Haurgeulis memiliki 25 rombongan belajar, dengan jumlah tenaga pendidik 42 orang dan tenaga kependidikan 15 orang, memiliki 889 siswa, 9 rombel untuk kelas X, 8 rombel untuk kelas XI dan 8 rombel untuk kelas XII. Sekolah juga memiliki berbagai sarana dan prasarana sesuai yang dipersyaratkan Standar Pelayanan Minimum (SPM).</p>
+        <p class="mb-0">Nama–nama Kepala Sekolah yang pernah menjabat dan sedang menjabat pada SMA Negeri 1 Haurgeulis adalah sebagai berikut.</p>
+      </div>
+    </div>
+    <div class="block p-10 text-blue-900 font-sans font-medium">
+      <div class="m-2 mt-0 p-3 shadow-lg rounded-lg bg-gradient-to-r from-blue-200 to-white">
+        <p>Drs. PONIDI (Pymt.)</p>
+        <p>Periode	:	Thn 1997 s.d. Thn 1999</p>
+      </div>
+      <div class="m-2 p-3 shadow-lg rounded-lg bg-gradient-to-r from-blue-200 to-white">
+        <p>Drs. JUNAEDI, M.Pd</p>
+        <p>Periode	:	Thn 1999 s.d. Thn 2003</p>
+      </div>
+      <div class="m-2 p-3 shadow-lg rounded-lg bg-gradient-to-r from-blue-200 to-white">
+        <p>DR. H. TAJUDIN, M.Pd</p>
+        <p>Periode	:	Thn 2003 s.d. Thn 2007</p>
+      </div>
+      <div class="m-2 p-3 shadow-lg rounded-lg bg-gradient-to-r from-blue-200 to-white">
+        <p>Drs. H. MASDUKI AHMAD</p>
+        <p>Periode	:	Thn 2007 s.d. Thn 2011</p>
+      </div>
+    
+      <div class="m-2 p-3 shadow-lg rounded-lg bg-gradient-to-r from-blue-200 to-white">
+        <p>Dra. Hj. SULASTRI D.J, M.Pd</p>
+        <p>Periode	:	Thn 2011 s.d. Thn 2013</p>
+      </div>
+      <div class="m-2 p-3 shadow-lg rounded-lg bg-gradient-to-r from-blue-200 to-white">
+        <p>Drs. ASEP RAMLI, M.Pd</p>
+        <p>Periode	:	Thn 2013  s.d. Thn 2018</p>
+      </div>
+      <div class="m-2 p-3 shadow-lg rounded-lg bg-gradient-to-r from-blue-200 to-white">
+        <p>AMBAR TRIWIDODO, S.Pd</p>
+        <p>Periode	:	Thn 2018  s.d. Thn 2021</p>
+      </div>
+      <div class="m-2 p-3 shadow-lg rounded-lg bg-gradient-to-r from-blue-200 to-white">
+        <p>Drs. EDI KANEDI, M.Pd (Plt.)</p>
+        <p>Periode	:	Februari s.d. Juli 2021 (6 Bulan)</p>
+      </div>
+    
+      <div class="m-2 p-3 shadow-lg rounded-lg bg-gradient-to-r from-blue-200 to-white">
+        <p>RASTANI, S.Pd., M.Pd  (Plt)</p>
+        <p>Periode	:	Agustus 2021 s.d. Desember 2021 (5 Bulan)</p>
+      </div>
+      <div class="m-2 p-3 shadow-lg rounded-lg bg-orange-300">
+        <p>Drs. OTONG WAHYUDIN, M.Pd</p>
+        <p>Periode	:	Desember 2021 s.d. Sekarang</p>
+      </div>
+    
+  </div>
+</div>
+
+  <div class="bg-wave p-4">
+    <!-- <div class="max-w-5xl mx-auto border-0 shadow-xl sm:mt-0 md:mt-8 mb-8 md:rounded-xl p-4 bg-yellow-500">
+      <h2 class="font-medium tracking-tight text-blue-900 text-xl text-center mx-auto">
+        <span class="block mx-auto text-center ">Fitur lain masih dalam pengembangan ~</span>
+      </h2>
+    </div> -->
+    </div>
+  
+  
+
+
+    </section>
+    <div class="footer-2 bg-gray-800 pt-6 md:pt-12">
+      <!-- <div class="container px-4 mx-auto">
+    
+        <div class="md:flex md:flex-wrap md:-mx-4 py-6 md:pb-12">
+    
+          <div class="footer-info lg:w-1/3 md:px-4">
+            <h4 class="text-white text-2xl mb-4">19K users are using FWR blocks and making their life easy.</h4>
+            <p class="text-gray-400">We have carefully crafted the blocks to suit to everyone's need.</p>
+            <div class="mt-4">
+              <button class="bg-facebook py-2 px-4 text-white rounded mt-2 transition-colors duration-300">
+                <span class="fab fa-facebook-f mr-2"></span> Follow
+              </button>
+              <button class="bg-twitter py-2 px-4 text-white rounded ml-2 mt-2 transition-colors duration-300">
+                <span class="fab fa-twitter mr-2"></span> Follow @freeweb19
+              </button>
+            </div>
+          </div>
+    
+          <div class="md:w-2/3 lg:w-1/3 md:px-4 xl:pl-16 mt-12 lg:mt-0">
+            <div class="sm:flex">
+              <div class="sm:flex-1">
+                <h6 class="text-base font-medium text-white uppercase mb-2">About</h6>
+                <div>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Company</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Culture</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Team</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Careers</a>
+                </div>
+              </div>
+              <div class="sm:flex-1 mt-4 sm:mt-0">
+                <h6 class="text-base font-medium text-white uppercase mb-2">What we offer</h6>
+                <div>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Blocks</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Resources</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Tools</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Tutorials</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Freebies</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="md:w-1/3 md:px-4 md:text-center mt-12 lg:mt-0">
+            <h5 class="text-lg text-white font-medium mb-4">Explore our site</h5>
+            <button class="bg-indigo-600 text-white hover:bg-indigo-700 rounded py-2 px-6 md:px-12 transition-colors duration-300">Explore</button>
+          </div>
+    
+        </div>
+    
+      </div> -->
+    
+      <div class="border-t border-solid border-gray-900 mt-4 py-4">
+        <div class="container px-4 mx-auto">
+    
+          <div class="md:flex md:-mx-4 md:items-center">
+            <div class="md:flex-1 md:px-4 text-center md:text-left">
+              <p class="text-white">&copy; 
+                <strong>SMAN 1 HAURGEULIS 2023</strong>
+                </p>
+            </div>
+            <div class="md:flex-1 md:px-4 text-center md:text-right">
+              <!-- <a href="#" class="py-2 px-4 text-white inline-block hover:underline">Terms of Service</a>
+              <a href="#" class="py-2 px-4 text-white inline-block hover:underline">Privacy Policy</a> -->
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>SMAN 1 Haurgeulis</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo-smantulis.png">
+    <style>
+        .carousel-open:checked + .carousel-item {
+            position: static;
+            opacity: 100;
+        }
+        .carousel-item {
+            -webkit-transition: opacity 0.6s ease-out;
+            transition: opacity 0.6s ease-out;
+        }
+        #carousel-1:checked ~ .control-1,
+        #carousel-2:checked ~ .control-2,
+        #carousel-3:checked ~ .control-3 {
+            display: block;
+        }
+        .carousel-indicators {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 2%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+        }
+        #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+        #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+        #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+            color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+        }
+        .bg-gradient-new {
+        background-color: #A9C8EE;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23A9C8EE'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23d4e4f7'/%3E%3Cstop offset='1' stop-color='%23A9C8EE'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg %3E%3Cg transform='translate(0 75)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform=''%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.53' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        }
+        .bg-smantulis {
+        background-color: #f69915;
+        }
+        .bg-wave {
+          background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='120' height='40' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M-50.129 12.685C-33.346 12.358-16.786 4.918 0 5c16.787.082 43.213 10 60 10s43.213-9.918 60-10c16.786-.082 33.346 7.358 50.129 7.685'  stroke-width='0.5' stroke='hsla(33, 90%, 65%, 1)' fill='none'/><path d='M-50.129 32.685C-33.346 32.358-16.786 24.918 0 25c16.787.082 43.213 10 60 10s43.213-9.918 60-10c16.786-.082 33.346 7.358 50.129 7.685'  stroke-width='0.5' stroke='hsla(231, 48%, 48%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-240,0)' fill='url(%23a)'/></svg>")        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="transition duration-500 font-normal bg-gradient-new">
+    
+    <header class=" sticky top-0 z-5">
+        <!-- component -->
+
+<div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-8000">
+  <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div class="p-4 flex flex-row items-center justify-between">
+        <a class="navbar-brand" href="#">
+            <img src="/smantulis.png" alt="" width="50" height="50">
+        </a>
+      <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline ml-2">SMAN 1 Haurgeulis</a>
+      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+      <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="index.html#">Home</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="index.html#kepala-sekolah">Kepala Sekolah</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="index.html#sejarah">Sejarah</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="gtk.html">GTK</a>
+      <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://info.sman1haurgeulis.sch.id/" target="_blank">SKL</a> -->
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-orange-200 rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://sman1haurgeulis.sch.id/ppdb2023.html" target="_blank">PPDB 2023 Tahap I</a>
+      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://sman1haurgeulis.sch.id/ppdb2023_2.html" target="_blank">PPDB 2023 Tahap II</a>
+    </nav>
+  </div>
+</div>
+    </header>
+    <!-- <section>
+        <div class="carousel relative bg-white">
+            <div class="carousel-inner relative w-full"> -->
+              <!--Slide 1-->
+                <!-- <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item absolute opacity-0" style="height:auto;">
+                    <img src="./img/sl-1.jpg" alt="">
+                </div>
+                <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> -->
+                
+                <!--Slide 2-->
+                <!-- <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:auto;">
+                    <img src="./img/sl-2.jpg" alt="">
+                </div>
+                <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> -->
+                
+                <!--Slide 3-->
+                <!-- <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:auto;">
+                    <img src="./img/sl-3.jpg" alt="">
+                </div>
+                <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> -->
+        
+                <!-- Add additional indicators for each slide-->
+                <!-- <ol class="carousel-indicators">
+                    <li class="inline-block mr-3">
+                        <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                </ol>
+                
+            </div>
+        </div>
+    </section>
+    <section> -->
+      <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-wave py-2">
+  <div class="max-w-5xl mx-auto border-0 shadow-xl sm:mt-0 md:mt-8 mb-8 md:rounded-xl p-4 bg-smantulis">
+    <h2 class="font-extrabold tracking-tight text-blue-900 text-3xl text-center mx-auto">
+      <span class="block mx-auto text-center ">Pengumuman Kelulusan PPDB 2023 Tahap I</span>
+      <span class="block mx-auto text-center ">SMA NEGERI 1 HAURGEULIS</span>
+    </h2>
+  </div>
+  </div>
+  
+  <div class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100" id="kepala-sekolah">
+    <div class="max-w-full border-b-2 shadow-sm mt-1 mb-1 p-2 border-blue-900 bg-gradient-to-r from-blue-100 to-white rounded-t-md">
+      <h3 class="font-bold tracking-tight text-blue-900 text-2xl pl-2">
+        <span class="block">Jalur Prestasi Rapor</span>
+      </h3>
+    </div>
+    
+    <div class="max-w-full border-0 shadow-sm mt-1 mb-1 p-2 bg-white rounded-md flex">
+      <div class="text-justify font-sans tracking-tight text-blue-900 p-4 max-w-2xl">
+        
+<table border=0 cellpadding=0 cellspacing=0 width=707 style='border-collapse:
+ collapse;table-layout:fixed;width:531pt'>
+ <col width=64 style='width:48pt'>
+ <col width=43 style='mso-width-source:userset;mso-width-alt:1489;width:32pt'>
+ <col width=311 style='mso-width-source:userset;mso-width-alt:10868;width:234pt'>
+ <col width=289 style='mso-width-source:userset;mso-width-alt:10077;width:217pt'>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 width=64 style='height:14.5pt;width:48pt'></td>
+  <td width=43 style='width:32pt'></td>
+  <td width=311 style='width:234pt'></td>
+  <td width=289 style='width:217pt'></td>
+ </tr>
+ <tr height=27 style='height:20.0pt '>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl67><b>NO</b></td>
+  <td class=xl67 style='border-left:none '><b>NAMA</b></td>
+  <td class=xl67 style='border-left:none '><b>ASAL SEKOLAH</b><span
+  style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>1</td>
+  <td class=xl68 style='border-top:none;border-left:none'>ABIMANYU ARYA WIJAYA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>2</td>
+  <td class=xl68 style='border-top:none;border-left:none'>ADINDA DEWI OKTAPIANI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>3</td>
+  <td class=xl68 style='border-top:none;border-left:none'>AL FATHIN RAMADHAN</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>4</td>
+  <td class=xl68 style='border-top:none;border-left:none'>ALDI YANSYAH</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>5</td>
+  <td class=xl68 style='border-top:none;border-left:none'>AMANDA DWI RIYANTI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>6</td>
+  <td class=xl68 style='border-top:none;border-left:none'>ANDHIKA MUHAMMAD
+  NURAY</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>7</td>
+  <td class=xl68 style='border-top:none;border-left:none'>ARINSA FRIZY AURORA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>8</td>
+  <td class=xl68 style='border-top:none;border-left:none'>AURA JEHAN AL HAQ</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  ANJATAN</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>9</td>
+  <td class=xl68 style='border-top:none;border-left:none'>BAYU SUKMA GIRI
+  RAMADHAN</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>10</td>
+  <td class=xl68 style='border-top:none;border-left:none'>CHELSEA MARSHELA
+  KANYADEVI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>11</td>
+  <td class=xl68 style='border-top:none;border-left:none'>CHICA CAHAYA MUSTIKA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SMP MUHAMMADIYAH
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>12</td>
+  <td class=xl68 style='border-top:none;border-left:none'>DAVIQ</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>13</td>
+  <td class=xl68 style='border-top:none;border-left:none'>ELA SEFIYANI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>14</td>
+  <td class=xl68 style='border-top:none;border-left:none'>EXAVIDA SUCIA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SMP MUHAMMADIYAH
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>15</td>
+  <td class=xl68 style='border-top:none;border-left:none'>FADHIL FAIZ</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SMP MODERN RIYADHUL
+  JANNAH</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>16</td>
+  <td class=xl68 style='border-top:none;border-left:none'>FADLY NUR QOLBY</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SMP MUHAMMADIYAH
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>17</td>
+  <td class=xl68 style='border-top:none;border-left:none'>FRENCHISKA FLORENSTIN</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>18</td>
+  <td class=xl68 style='border-top:none;border-left:none'>GHEFIRA NURNABILLAH
+  SYAHHAYUTA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>19</td>
+  <td class=xl68 style='border-top:none;border-left:none'>HAIKAL DZULFAWZY</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>20</td>
+  <td class=xl68 style='border-top:none;border-left:none'>IBNU KAMIL KURNIA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>21</td>
+  <td class=xl68 style='border-top:none;border-left:none'>IMEL AMELIA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>22</td>
+  <td class=xl68 style='border-top:none;border-left:none'>INTAN VIVIAN SARI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  ANJATAN</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>23</td>
+  <td class=xl68 style='border-top:none;border-left:none'>JIHAN DWI SALSABILA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>24</td>
+  <td class=xl68 style='border-top:none;border-left:none'>KEYSHA AZELLIN</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>25</td>
+  <td class=xl68 style='border-top:none;border-left:none'>KHOIRUNISA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 3
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>26</td>
+  <td class=xl68 style='border-top:none;border-left:none'>KLARA EENDRIYUNI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  KROYA</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>27</td>
+  <td class=xl68 style='border-top:none;border-left:none'>LISMA MALIKA PURNAMA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>28</td>
+  <td class=xl68 style='border-top:none;border-left:none'>MARVEL GUNAWAN
+  WIRYANTO</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>29</td>
+  <td class=xl68 style='border-top:none;border-left:none'>MEDELINE ESTHER
+  FATIHAH</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>30</td>
+  <td class=xl68 style='border-top:none;border-left:none'>MEGA PUTRI ANDINI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  KROYA</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>31</td>
+  <td class=xl68 style='border-top:none;border-left:none'>MELIA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>32</td>
+  <td class=xl68 style='border-top:none;border-left:none'>META TRI
+  SULISTIANINGSIH</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  KROYA</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>33</td>
+  <td class=xl68 style='border-top:none;border-left:none'>MOH. FAUZAN HARIADI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>34</td>
+  <td class=xl68 style='border-top:none;border-left:none'>MUHAMMAD NURYAI
+  AMARULLOH</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>35</td>
+  <td class=xl68 style='border-top:none;border-left:none'>MUHAMMAD REVI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>36</td>
+  <td class=xl68 style='border-top:none;border-left:none'>MUHAMMAD SAEPUL
+  HIDAYATULLOH</td>
+  <td class=xl68 style='border-top:none;border-left:none'>MTSS NURUL HIKMAH
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>37</td>
+  <td class=xl68 style='border-top:none;border-left:none'>NEYSA AMANDA HARTOMO</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 3
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>38</td>
+  <td class=xl68 style='border-top:none;border-left:none'>NOVIYANI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 3
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>39</td>
+  <td class=xl68 style='border-top:none;border-left:none'>PUTRI FEBIOLA EFENDI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SMP WIRAUTAMA PATROL</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>40</td>
+  <td class=xl68 style='border-top:none;border-left:none'>PUTRI NAYLA RAMADANI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SMP MODERN RIYADHUL
+  JANNAH</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>41</td>
+  <td class=xl68 style='border-top:none;border-left:none'>PUTRI NURAHAYU SALAM</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SMP ISLAM PLUS
+  ASSALAM</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>42</td>
+  <td class=xl68 style='border-top:none;border-left:none'>REVA VANESTIA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>43</td>
+  <td class=xl68 style='border-top:none;border-left:none'>ROFANINA SYAHIDAH</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SMP MUHAMMADIYAH
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>44</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SAFIRA NUR HIKMAH</td>
+  <td class=xl68 style='border-top:none;border-left:none'>MTSS NURUL HIKMAH
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>45</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SHILLA OCTA VIANA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 3
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>46</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SITI AJENG AISAH</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>47</td>
+  <td class=xl68 style='border-top:none;border-left:none'>SYAMSUL RAMZI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>48</td>
+  <td class=xl68 style='border-top:none;border-left:none'>TANILIYA</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 3
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>49</td>
+  <td class=xl68 style='border-top:none;border-left:none'>VIKKY GALING
+  MEILANDRI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>50</td>
+  <td class=xl68 style='border-top:none;border-left:none'>WARTINI</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 3
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>51</td>
+  <td class=xl68 style='border-top:none;border-left:none'>WINDY EASY</td>
+  <td class=xl68 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=43 style='width:32pt'></td>
+  <td width=311 style='width:234pt'></td>
+  <td width=289 style='width:217pt'></td>
+ </tr>
+ <![endif]>
+</table>
+        
+      </div>
+      <div class="mx-auto hidden lg:block bottom-0 align-bottom" style="width: fit-content;">
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100"  id="sejarah">
+    <div class="max-w-full border-b-2 shadow-sm mt-1 mb-1 p-2 border-blue-900 bg-gradient-to-r from-blue-100 to-white rounded-t-md">
+      <h3 class="font-bold tracking-tight text-blue-900 text-2xl pl-2">
+        <span class="block">Jalur Prestasi Kejuaraan</span>
+      </h3>
+    </div>
+        <table border=0 cellpadding=0 cellspacing=0 width=697 style='border-collapse:
+ collapse;table-layout:fixed;width:523pt'>
+ <col width=64 style='width:48pt'>
+ <col width=43 style='mso-width-source:userset;mso-width-alt:1489;width:32pt'>
+ <col width=325 style='mso-width-source:userset;mso-width-alt:11357;width:244pt'>
+ <col width=265 style='mso-width-source:userset;mso-width-alt:9262;width:199pt'>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 width=64 style='height:14.5pt;width:48pt'></td>
+  <td width=43 style='width:32pt'></td>
+  <td width=325 style='width:244pt'></td>
+  <td width=265 style='width:199pt'></td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 colspan=4 style='height:14.5pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=27 style='height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl67><b>NO</b></td>
+  <td class=xl67 style='border-left:none'><b>NAMA</b></</td>
+  <td class=xl67 style='border-left:none'><b>ASAL SEKOLAH</b></<span
+  style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>1</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ACHMAD MUZAQQI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>2</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ALISYA LUBNA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MTSS DARUL FALAH</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>3</td>
+  <td class=xl65 style='border-top:none;border-left:none'>AMANDA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  KROYA</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>4</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ANNISA NURAFIFAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>5</td>
+  <td class=xl65 style='border-top:none;border-left:none'>AURELLI PRICILIANTI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>6</td>
+  <td class=xl65 style='border-top:none;border-left:none'>AZIZAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>7</td>
+  <td class=xl65 style='border-top:none;border-left:none'>BUNGA BILL KISS</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>8</td>
+  <td class=xl65 style='border-top:none;border-left:none'>CINTA BILL KISS</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>9</td>
+  <td class=xl65 style='border-top:none;border-left:none'>FAHRI RIZKI AGUNG</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>10</td>
+  <td class=xl65 style='border-top:none;border-left:none'>FERRY SETYAWAN
+  DININGRAT</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  KROYA</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>11</td>
+  <td class=xl65 style='border-top:none;border-left:none'>GIO AGUSTINA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>12</td>
+  <td class=xl65 style='border-top:none;border-left:none'>IMELDA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>13</td>
+  <td class=xl65 style='border-top:none;border-left:none'>KANIA DEWI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>14</td>
+  <td class=xl65 style='border-top:none;border-left:none'>KHAIRUL UMMAM MAULANA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>15</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MALA AMELIA SARI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  KROYA</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>16</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NAFISA SALSA BILA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MTSS NURUL HUDA
+  MUNJUL</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>17</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NAILLAH MAULIDA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>18</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NAYLA FAZRY PUTRI
+  RAMADHANY</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>19</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NOVI APRILIANI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>20</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NUR NADIRAH FEBRIANI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>21</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RAYHAN FIRMAN
+  NURJAMAN</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>22</td>
+  <td class=xl65 style='border-top:none;border-left:none'>REVINA SILVIANA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  KROYA</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>23</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RORO KEISHA ARGYA
+  RESMANA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>24</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SALSYA TIA SYAFIRA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  KROYA</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>25</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SELLY DAMAYANTI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>26</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SHEBIA VIARLEGITA
+  BUDIONO</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>27</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SHYNTA DEWI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>28</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SITI PADILAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  GANTAR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>29</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SRI MUNAWAROH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>30</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SYAH MAULANA VIRGI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>31</td>
+  <td class=xl65 style='border-top:none;border-left:none'>YATNO AJI RAHMATULLOH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>32</td>
+  <td class=xl69 style='border-top:none;border-left:none'>ZAHRATUL SYIFA AL
+  AJWA RAUDAHTUL JANNAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=43 style='width:32pt'></td>
+  <td width=325 style='width:244pt'></td>
+  <td width=265 style='width:199pt'></td>
+ </tr>
+ <![endif]>
+</table>
+      </div>
+    </div>
+   </div>
+   
+   <div class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100"  id="sejarah">
+    <div class="max-w-full border-b-2 shadow-sm mt-1 mb-1 p-2 border-blue-900 bg-gradient-to-r from-blue-100 to-white rounded-t-md">
+      <h3 class="font-bold tracking-tight text-blue-900 text-2xl pl-2">
+        <span class="block">Jalur Anak Guru</span>
+      </h3>
+    </div>
+    <div class="mx-auto block mt-8 md:hidden bottom-0 mb-2 w-full" style="width: fit-content;">
+    </div>
+<table border=0 cellpadding=0 cellspacing=0 width=602 style='border-collapse:
+ collapse;table-layout:fixed;width:452pt'>
+ <col width=64 style='width:48pt'>
+ <col width=43 style='mso-width-source:userset;mso-width-alt:1489;width:32pt'>
+ <col width=311 style='mso-width-source:userset;mso-width-alt:7191;width:244pt'>
+ <col width=289 style='mso-width-source:userset;mso-width-alt:10077;width:217pt'>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 width=64 style='height:14.5pt;width:48pt'></td>
+  <td width=43 style='width:32pt'></td>
+  <td width=206 style='width:155pt'></td>
+  <td width=289 style='width:217pt'></td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 colspan=4 style='height:14.5pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=27 style='height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl67><b>NO</b></td>
+  <td class=xl67 style='border-left:none'><b>NAMA</b></td>
+  <td class=xl67 style='border-left:none'><b>ASAL SEKOLAH</b><span
+  style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>1</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ADDYA ADMI MAFAZA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>2</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ALBANI RIZKY RAMDANI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 3
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>3</td>
+  <td class=xl65 style='border-top:none;border-left:none'>AULIA RAHMAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>4</td>
+  <td class=xl65 style='border-top:none;border-left:none'>AULIYA AZZAHRA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MTSS NURUL HIKMAH
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>5</td>
+  <td class=xl65 style='border-top:none;border-left:none'>AZIZAL AHMAD</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>6</td>
+  <td class=xl65 style='border-top:none;border-left:none'>CHONG KAI LE KYRA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP MUHAMMADIYAH
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>7</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ISNAIN RADITA PUTRA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>8</td>
+  <td class=xl65 style='border-top:none;border-left:none'>KHALILA ARNES VYATRI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>9</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MEVIA ARTA BRILIAN</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>10</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RADINKA HIFDI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>11</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RIFAN ARYA PUTRA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MTSS AL-IRSYAD
+  AL-ISLAMIYYAH</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>12</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RIFATH REZA RAMDHANI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>13</td>
+  <td class=xl65 style='border-top:none;border-left:none'>TINA MAULIDA HASANAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MTSS PP. DARUSSALAM
+  KUNIR</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl66 style='border-top:none'>14</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ZASKIA INDAH PERMATA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=43 style='width:32pt'></td>
+  <td width=206 style='width:155pt'></td>
+  <td width=289 style='width:217pt'></td>
+ </tr>
+ <![endif]>
+</table>
+    </div>
+   </div>
+   
+   <div class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100"  id="sejarah">
+    <div class="max-w-full border-b-2 shadow-sm mt-1 mb-1 p-2 border-blue-900 bg-gradient-to-r from-blue-100 to-white rounded-t-md">
+      <h3 class="font-bold tracking-tight text-blue-900 text-2xl pl-2">
+        <span class="block">Jalur KETM</span>
+      </h3>
+    </div>
+    <div class="mx-auto block mt-8 md:hidden bottom-0 mb-2 w-full" style="width: fit-content;">
+    </div>
+<table border=0 cellpadding=0 cellspacing=0 width=720 style='border-collapse:
+ collapse;table-layout:fixed;width:540pt'>
+ <col width=64 style='width:48pt'>
+ <col width=43 style='mso-width-source:userset;mso-width-alt:1489;width:32pt'>
+ <col width=324 style='mso-width-source:userset;mso-width-alt:11310;width:243pt'>
+ <col width=289 style='mso-width-source:userset;mso-width-alt:10077;width:217pt'>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 width=64 style='height:14.5pt;width:48pt'></td>
+  <td width=43 style='width:32pt'></td>
+  <td width=324 style='width:243pt'></td>
+  <td width=289 style='width:217pt'></td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 colspan=4 style='height:14.5pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=27 style='height:20.0pt'>
+  <td height=27 style='height:20.0pt'></td>
+  <td class=xl67><b>NO</b></td>
+  <td class=xl67 style='border-left:none'><b>NAMA</b></td>
+  <td class=xl67 style='border-left:none'><b>ASAL SEKOLAH</b><span
+  style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>1</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ADELIA NOVRI ARDANA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>2</td>
+  <td class=xl65 style='border-top:none;border-left:none'>AGIS AL GIFARI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>3</td>
+  <td class=xl65 style='border-top:none;border-left:none'>AGNIA PUTRI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>4</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ALIFAH TASBIHATUN
+  ULUWIYAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>5</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ANGGI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MTSS NURUL HIKMAH
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>6</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ANITA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>7</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ARVEL BUN GIE PRATAMA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>8</td>
+  <td class=xl65 style='border-top:none;border-left:none'>AYU RAHMAWATI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP NU HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>9</td>
+  <td class=xl65 style='border-top:none;border-left:none'>CANTIKA LISTIANTI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>10</td>
+  <td class=xl65 style='border-top:none;border-left:none'>DEVY OKTAVIA
+  HERMAWATI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>11</td>
+  <td class=xl65 style='border-top:none;border-left:none'>DIAN ANJANI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>12</td>
+  <td class=xl65 style='border-top:none;border-left:none'>DICKY FIRMANSYAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>13</td>
+  <td class=xl65 style='border-top:none;border-left:none'>DINDA RISKA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>14</td>
+  <td class=xl65 style='border-top:none;border-left:none'>EFFAN ALVI NADIN</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP NU HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>15</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ELSA LAVIA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>16</td>
+  <td class=xl65 style='border-top:none;border-left:none'>EVI NURUL SEPTIANI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>17</td>
+  <td class=xl65 style='border-top:none;border-left:none'>FITRI LESTARI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>18</td>
+  <td class=xl65 style='border-top:none;border-left:none'>INA KUSUMA PUTRI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>19</td>
+  <td class=xl65 style='border-top:none;border-left:none'>JAU'ZA NADIA IBTIHAJ</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>20</td>
+  <td class=xl65 style='border-top:none;border-left:none'>JENNY AMALIA SAFITRI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP MUHAMMADIYAH
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>21</td>
+  <td class=xl65 style='border-top:none;border-left:none'>JULIA PUTRI LOVANITA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>22</td>
+  <td class=xl65 style='border-top:none;border-left:none'>KAHANDOKO</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>23</td>
+  <td class=xl65 style='border-top:none;border-left:none'>KAKA PUTRA DIWANGSA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>24</td>
+  <td class=xl65 style='border-top:none;border-left:none'>KASIH LAURA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>25</td>
+  <td class=xl65 style='border-top:none;border-left:none'>KAYILA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>26</td>
+  <td class=xl65 style='border-top:none;border-left:none'>KEYSHA APRILIA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>27</td>
+  <td class=xl65 style='border-top:none;border-left:none'>KHAIRIL NUR AL DAYIS</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP MUHAMMADIYAH
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>28</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MAUDZATUN NAZWA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>29</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MELATI AMELIA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>30</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MONICA ANNAS TASYA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>31</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MUHAMAD ABDURAHMAN
+  MA'RUF</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>32</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MUHAMAD SEVA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>33</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MUHAMMAD JOHAN AKBAR
+  RAMADHAN</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>34</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MUNAWAROH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>35</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NABILA NUR ATHIFAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>36</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NA-ILAH HAIFA'
+  PERMATA HATI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>37</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NIA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>38</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NIDA FATALIA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>39</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NOVI YANA SARI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>40</td>
+  <td class=xl65 style='border-top:none;border-left:none'>NURIL FATIMAH JARO</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MTSS AN-NUR</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>41</td>
+  <td class=xl65 style='border-top:none;border-left:none'>QUEEN BUNGA LARAS
+  WANGI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>42</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RENO AHMAD FAHREZI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>43</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RIKO RIKARDO</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>44</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RIRIN AULIA APRILIANI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>45</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RISKI MAULANA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>46</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RISKY RAMADHAN</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP NU HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>47</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RIYANTI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>48</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RIZKI GIFARIANSYAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MTSS AN-NUR</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>49</td>
+  <td class=xl65 style='border-top:none;border-left:none'>RIZKY RAMADHANI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>50</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ROHAYATI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>51</td>
+  <td class=xl65 style='border-top:none;border-left:none'>ROSSA AMANDA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>MTSS AN-NUR</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>52</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SAHLA NURJANAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>53</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SARIF</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>54</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SELLYH ARTA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>55</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SHELLA TRI AMELLIA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>56</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SHERLYNA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>57</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SITI NURLAELI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>58</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SOFAN SOFIANI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>59</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SUHENDI ADI TRI FAUJI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>60</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SYOHIBUL HUJJAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>61</td>
+  <td class=xl65 style='border-top:none;border-left:none'>WEGA ANISAH HIDAYAH</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>62</td>
+  <td class=xl65 style='border-top:none;border-left:none'>WIDIA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 2
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>63</td>
+  <td class=xl65 style='border-top:none;border-left:none'>WINDHY WIJAYANTI</td>
+  <td class=xl65 style='border-top:none;border-left:none'>UPTD SMP NEGERI 1
+  HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>64</td>
+  <td class=xl65 style='border-top:none;border-left:none'>YAFTAH ARUF</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP PUI HAURGEULIS</td>
+ </tr>
+ <tr height=21 style='height:15.5pt'>
+  <td height=21 style='height:15.5pt'></td>
+  <td class=xl66 style='border-top:none'>65</td>
+  <td class=xl65 style='border-top:none;border-left:none'>YUDA PRAMANA</td>
+  <td class=xl65 style='border-top:none;border-left:none'>SMP NU HAURGEULIS</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=43 style='width:32pt'></td>
+  <td width=324 style='width:243pt'></td>
+  <td width=289 style='width:217pt'></td>
+ </tr>
+ <![endif]>
+</table>
+    </div>
+   </div>
+   
+    <div class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100"  id="sejarah">
+   
+        <div class="block p-10 text-blue-900 font-sans font-medium">
+          
+          <div class="m-2 p-3 shadow-lg rounded-lg bg-orange-300">
+            <p>Selamat bagi lulus</p>
+            <p>Bagi yang belum lulus, tetap semangat untuk mencoba lagi pada tahap II</p>
+          </div>
+        
+        </div>
+
+    </div>
+
+</div>
+
+  <div class="bg-wave p-4">
+    <!-- <div class="max-w-5xl mx-auto border-0 shadow-xl sm:mt-0 md:mt-8 mb-8 md:rounded-xl p-4 bg-yellow-500">
+      <h2 class="font-medium tracking-tight text-blue-900 text-xl text-center mx-auto">
+        <span class="block mx-auto text-center ">Fitur lain masih dalam pengembangan ~</span>
+      </h2>
+    </div> -->
+    </div>
+  
+  
+
+
+    </section>
+    <div class="footer-2 bg-gray-800 pt-6 md:pt-12">
+      <!-- <div class="container px-4 mx-auto">
+    
+        <div class="md:flex md:flex-wrap md:-mx-4 py-6 md:pb-12">
+    
+          <div class="footer-info lg:w-1/3 md:px-4">
+            <h4 class="text-white text-2xl mb-4">19K users are using FWR blocks and making their life easy.</h4>
+            <p class="text-gray-400">We have carefully crafted the blocks to suit to everyone's need.</p>
+            <div class="mt-4">
+              <button class="bg-facebook py-2 px-4 text-white rounded mt-2 transition-colors duration-300">
+                <span class="fab fa-facebook-f mr-2"></span> Follow
+              </button>
+              <button class="bg-twitter py-2 px-4 text-white rounded ml-2 mt-2 transition-colors duration-300">
+                <span class="fab fa-twitter mr-2"></span> Follow @freeweb19
+              </button>
+            </div>
+          </div>
+    
+          <div class="md:w-2/3 lg:w-1/3 md:px-4 xl:pl-16 mt-12 lg:mt-0">
+            <div class="sm:flex">
+              <div class="sm:flex-1">
+                <h6 class="text-base font-medium text-white uppercase mb-2">About</h6>
+                <div>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Company</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Culture</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Team</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Careers</a>
+                </div>
+              </div>
+              <div class="sm:flex-1 mt-4 sm:mt-0">
+                <h6 class="text-base font-medium text-white uppercase mb-2">What we offer</h6>
+                <div>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Blocks</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Resources</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Tools</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Tutorials</a>
+                  <a href="#" class="text-gray-400 py-1 block hover:underline">Freebies</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="md:w-1/3 md:px-4 md:text-center mt-12 lg:mt-0">
+            <h5 class="text-lg text-white font-medium mb-4">Explore our site</h5>
+            <button class="bg-indigo-600 text-white hover:bg-indigo-700 rounded py-2 px-6 md:px-12 transition-colors duration-300">Explore</button>
+          </div>
+    
+        </div>
+    
+      </div> -->
+    
+      <div class="border-t border-solid border-gray-900 mt-4 py-4">
+        <div class="container px-4 mx-auto">
+    
+          <div class="md:flex md:-mx-4 md:items-center">
+            <div class="md:flex-1 md:px-4 text-center md:text-left">
+              <p class="text-white">&copy; 
+                <strong>SMAN 1 HAURGEULIS 2023</strong>
+                </p>
+            </div>
+            <div class="md:flex-1 md:px-4 text-center md:text-right">
+              <!-- <a href="#" class="py-2 px-4 text-white inline-block hover:underline">Terms of Service</a>
+              <a href="#" class="py-2 px-4 text-white inline-block hover:underline">Privacy Policy</a> -->
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</body>
+</html>
