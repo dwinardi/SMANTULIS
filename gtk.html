@@ -7,7 +7,7 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <title>SMAN 1 Haurgeulis</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <style>
         .carousel-open:checked + .carousel-item {
             position: static;
@@ -58,7 +58,7 @@
         <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
             <a class="navbar-brand" href="index.html">
-                <img src="/smantulis.png" alt="" width="50" height="50">
+                <img src="img/smantulis.png" alt="Beranda" width="50" height="50">
             </a>
             <a href="index.html" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline ml-2">SMANTULIS</a>
             <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
@@ -73,71 +73,37 @@
       <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="index.html#kepala-sekolah">Kepala Sekolah</a>
       <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="index.html#sejarah">Sejarah</a>
       <a class="px-4 py-2 mt-2 text-sm font-semibold bg-orange-200 rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="gtk.html">GTK</a>
-      <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://info.sman1haurgeulis.sch.id/" target="_blank">SKL</a> -->
-      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://sman1haurgeulis.sch.id/ppdb2023.html" target="_blank">PPDB 2023 Tahap I</a>
-      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://sman1haurgeulis.sch.id/ppdb2023_2.html" target="_blank">PPDB 2023 Tahap II</a>
     </nav>
         </div>
         </div>
     </header>
-    <!-- <section id="kepsek" class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100">
-        <div class="max-w-full border-b-2 shadow-sm mt-1 mb-1 p-2 border-blue-900 bg-gradient-to-r from-blue-100 to-white rounded-t-md">
-          <h3 class="font-bold tracking-tight text-blue-900 text-2xl pl-2">
-            <span class="block">Kepala Sekolah</span>
-          </h3>
-        </div>
-        <div class="max-w-full border-0 shadow-sm mt-1 mb-1 p-2 bg-white rounded-md flex">
-          <div class="text-justify font-sans tracking-tight text-blue-900 p-4 max-w-2xl">
-            <div class="mx-auto block md:hidden bottom-0 mb-8" style="width: fit-content;">
-              <img src="./img/kepsek.png" alt="" class="bottom-0 rounded-lg shadow-lg" style="width: 300px;">
-              <!-- <span class="block bg-blue-200 font-bold text-lg text-center p-2 rounded-full mt-2 shadow-lg">Drs. OTONG WAHYUDIN, M.Pd</span> -->
-            <!-- </div>
-            <p class="mb-4 text-left">Assalamu'alaikum Warahmatullahi Wabarakatuh,</p>
-            <p class="mb-4">Saya ucapkan Selamat Datang di  Website resmi SMA Negeri 1 Haurgeulis.</p>
-            <p class="mb-4">Seraya memanjatkan puji syukur kehadirat Allah Subhanahu wata'ala yang telah memberikan karunia dan kenikmatan yang tak terhitung banyaknya, tidak lupa shalawat serta salam ditujukan kepada Nabi Muhammad Shallallahu 'alaihi wasallam yang membawa dienul Islam sehingga kita bisa merasakan mana yang hak dan mana yang bathil.</p>
-            <p class="mb-4">Disertai perasaan bangga saya menuliskan kata sambutan ini, dalam rangka update Website Sekolah, baik dari sisi pengelolaan maupun isinya. Di era global dan pesatnya Teknologi Informasi dan Komunikasi ini, tidak dipungkiri bahwa keberadaan sebuah website untuk suatu organisasi, termasuk SMA Negeri 1 Haurgeulis, sangatlah penting. Wahana website dapat digunakan sebagai media penyebarluasan informasi-informasi dari sekolah, yang memang harus diketahui oleh stake holder secara luas. Disamping itu, website juga dapat menjadi sarana promosi sekolah yang cukup efektif. Berbagai kegiatan positif sekolah dapat diunggah, disertai video maupun gambar-gambar yang relevan, sehingga masyarakat dapat mengetahui prestasi-prestasi yang telah berhasil diraih oleh siswa siswi SMA Negeri 1 Haurgeulis.</p>
-            <p class="mb-4">Website juga dapat dijadikan sarana komunikasi antara sekolah dengan para alumni. Bahkan alumni dapat memanfaatkan website sekolah untuk kolaborasi, sehingga terbentuk ikatan alumni yang makin besar dan kuat. Sekolah menyadari bahwa alumni merupakan salah satu potensi yang apabila digali dan dikelola dengan baik dan benar akan mampu memberikan kontribusi yang sangat positif kepada sekolah. Oleh karena itu, saya sangat berharap, melalui website ini, himpunan alumni SMA Negeri 1 Haurgeulis akan semakin berkembang dan solid, sehingga pada waktunya nanti dapat memberikan kontribusi bagai kemajuan almamater tercinta untuk mencapai SMA Negeri 1 Haurgeulis yang lebih maju dan semakin terdepan,Terima kasih.</p>
-            <p class="mb-4 text-left">Wassalamu'alaikum Warahmatullahi Wabarakatuh.</p>
-          </div>
-          <div class="mx-auto hidden lg:block bottom-0 align-bottom" style="width: fit-content;">
-            <img src="./img/kepsek.png" alt="" class="bottom-0 rounded-lg shadow-lg" style="width: 300px;">
-            <!-- <span class="block bg-blue-200 font-bold text-lg text-center p-2 rounded-full mt-2 shadow-lg">Drs. OTONG WAHYUDIN, M.Pd</span> -->
-          <!-- </div>
-        </div>
-    </section> -->
     <section id="wakasek">
         <div class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100" id="kepala-sekolah">
             <div class="max-w-full border-b-2 shadow-sm mt-1 mb-1 p-2 border-blue-900 bg-gradient-to-r from-blue-100 to-white rounded-t-md">
               <h3 class="font-bold tracking-tight text-blue-900 text-2xl pl-2">
-                <span class="block mb-2">Penjamin Mutu Pendidikan, Wakasek, Pembina Osis & Staff Wakasek</span>
+                <span class="block mb-2">Wakasek, Pembina Osis & Staff Wakasek</span>
               </h3>
               <div class="md:flex sm:block pt-1">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/wakasek/pm-daji.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/wakasek/waka-kuri-rukiah.png" alt="Rukiah, S.Si., M.Pd - Wakil Kepala Sekolah Bidang Kurikulum">   
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/wakasek/waka-kuri-rukiah.png" alt="Sunset in the mountains">   
+                    <img class="w-auto rounded p-0" src="img/wakasek/waka-kesiswaan-daji.png" alt="Daji Abdul Rohman, S.T - Wakil Kepala Sekolah Bidang Kesiswaan">
                 </div>
-                <!-- div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/wakasek/waka-kesiswaan-noman.png" alt="Sunset in the mountains">
-                </div -->
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/wakasek/waka-sarpras-rinel.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/wakasek/waka-sarpras-thoyib.png" alt="Thoyib Adiwijaya, S.Pd - Wakil Kepala Sekolah Bidang Sarana & Prasarana">
                 </div>
               </div>
 
               <div class="md:flex sm:block pb-1">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/wakasek/waka-humas-thoyib.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/wakasek/pembina-osis-isnandar.png" alt="Isnandar, S.Sos - Pembina OSIS">   
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/wakasek/pembina-osis-asep.png" alt="Sunset in the mountains">   
+                    <img class="w-auto rounded p-0" src="img/wakasek/staff-waka-asep.png" alt="Asep Andri Astriyandi, M.Pd - Staff Wakil Kepala Sekolah Bidang Kurikulum">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/wakasek/staff-waka-din.png" alt="Sunset in the mountains">
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/wakasek/staf-waka-ari.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/wakasek/staff-waka-din.png" alt="Din Herdiana, S.S - Staff Wakil Kepala Sekolah Bidang Kurikulum">
                 </div>
               </div>
                 
@@ -148,217 +114,235 @@
         <div class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100" id="kepala-sekolah">
             <div class="max-w-full border-b-2 shadow-sm mt-1 mb-1 p-2 border-blue-900 bg-gradient-to-r from-blue-100 to-white rounded-t-md">
               <h3 class="font-bold tracking-tight text-blue-900 text-2xl pl-2">
-                <span class="block mb-2">Kasubag Tata Usaha & Staff Administrasi Sekolah</span>
+                <span class="block mb-2">Staff Administrasi Sekolah</span>
               </h3>
               <div class="md:flex sm:block pt-1">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/kasubag-susan.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/tu/arsiparis-susan.png" alt="Susana, S.E - Arsiparis">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-indri.png" alt="Sunset in the mountains">   
+                    <img class="w-auto rounded p-0" src="img/tu/tu-indri.png" alt="Indriyani, S.E - Pelaksana Administrasi Kesiswaan">   
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-ilman.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/tu/tu-ilman.png" alt="Ilman, S.E - Pelaksana Administrasi Keuangan">
+                </div>
+            </div>
+            
+            <div class="md:flex sm:block pb-1">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/tu/tu-edwar.png" alt="Edi Warsito - Pelaksana Administrasi Kepegawaian">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-edwar.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/tu/tu-suryana.png" alt="Suryana - Staff Administrasi Sarana & Prasarana">
+                </div>    
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/tu/tu-dyo.png" alt="Dyo Pratama Santoso, S.Kom - Staff Administrasi Operator Dapodik">   
                 </div>
-              </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/tu/tu-ivana.png" alt="Ivana Indriyanti, A.Ma - Staff Administrasi Keuangan">
+                </div>
+            </div>
 
               <div class="md:flex sm:block pb-1">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-farhany.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/tu/tu-persuratan-sahrul.png" alt="Sahrul Gunawan, S.T - Staff Administrasi Persuratan">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-dyo.png" alt="Sunset in the mountains">   
+                    <img class="w-auto rounded p-0" src="img/tu/tu-resepsionis-hesty.png" alt="Hesty Oktaviani Staff - Administrasi Resepsionis">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-ivana.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/tu/tu-perpus-heryanto.png" alt="Heryanto Fauzi Staff - Administrasi Perpustakaan">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-suryana.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/tu/tu-jenal.png" alt="Jenal Aripin - Staff Administrasi">   
+                </div>
+            </div>
+            
+            <div class="md:flex sm:block pb-1">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/tu/tu-dudi.png" alt="Dudi Winardi - Staff Administrasi">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-zenal.png" alt="Sunset in the mountains">
-                </div>
-              </div>
-
-              <div class="md:flex sm:block pb-1">
-                
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-heri.png" alt="Sunset in the mountains">   
-                </div>
-                <!-- div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-hesti.png" alt="Sunset in the mountains">
-                </div -->
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-sunanto.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/tu/tu-firmansyah.png" alt="Muchammad Firmansyah - Staff Administrasi">   
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-firman.png" alt="Sunset in the mountains">   
+                    <img class="w-auto rounded p-0" src="img/tu/penjaga-sekolah-yanto.png" alt="Bambang Sugianto - Penjaga Sekolah">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/tu/tu-yanto.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/tu/penjaga-kebersihan-sunanto.png" alt="Sunanto - Penjaga Kebersihan">
                 </div>
-              </div>
-
-              
-                
-              </div>
-              </div>
+            </div>
     </section>
+
     <section id="guru">
         <div class="max-w-5xl mx-auto md:border-2 shadow-xl sm:mt-4 md:mt-8 md:mb-8 md:rounded-xl p-4 bg-white border-gray-100" id="kepala-sekolah">
             <div class="max-w-full border-b-2 shadow-sm mt-1 mb-1 p-2 border-blue-900 bg-gradient-to-r from-blue-100 to-white rounded-t-md">
               <h3 class="font-bold tracking-tight text-blue-900 text-2xl pl-2">
-                <span class="block mb-2">Guru Mata Pelajaran & BK</span>
+                <span class="block mb-2">Guru Mata Pelajaran & Bimbingan dan Konseling</span>
               </h3>
               <div class="md:flex sm:block pt-1">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-syarief.png" alt="Sunset in the mountains">
-                </div>
-                <!-- div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-sudariyah.png" alt="Sunset in the mountains">   
-                </div -->
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-elmi.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-syarief.png" alt="Syarief Muharam, S.Pd - Guru Penjaskes">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-castono.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-elmi.png" alt="Dra. Elmi Puspitawati - Guru Bimbingan dan Konseling">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-thoyib.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-castono.png" alt="H. Castono, M.Pd - Guru Bahasa Indonesia">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-thoyib.png" alt="Thoyib Adiwijaya, S.Pd - Guru Bahasa Inggris">
                 </div>
               </div>
 
               <div class="md:flex sm:block pb-1">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-nani.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-nani.png" alt="Nani Minarni, S.Pd - Guru Matematika">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-komariah.png" alt="Sunset in the mountains">   
+                    <img class="w-auto rounded p-0" src="img/guru/pns-komariah.png" alt="Komariah, S.Pd - Guru Matematika">   
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-ibnu.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-ibnu.png" alt="Ibnu Salimi, S.Ag - Guru Pendidikan Agama Islam">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-handi.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-handi.png" alt="Handi Handana, S.S - Guru Bahasa Inggris">
+                </div>
+            </div>
+            
+            <div class="md:flex sm:block pb-1">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-duryat.png" alt="Duryat, S.Pd - Guru Matematika">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-duryat.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-rukiah.png" alt="Rukiah, S.Si., M.Pd - Guru Biologi">   
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-muhai.png" alt="Muhaimin, S.Pd - Guru Fisika">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-sanoto.png" alt="Sanoto, S.Pd., M.Si - Guru Sejarah">
+                </div>
+            </div>
+            
+            <div class="md:flex sm:block pb-1">
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                      <img class="w-auto rounded p-0" src="img/guru/pns-rinel.png" alt="Rinel, S.Si., M.Pd - Guru Kimia">   
+                  </div>
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                      <img class="w-auto rounded p-0" src="img/guru/pns-daji.png" alt="Daji Abdul Rohman, S.T - Guru Kimia">
+                  </div>
+               <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-umi.png" alt="Siti Umi Nurjanah, S.Ag - Guru Pendidikan Agama Islam">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-abing.png" alt="Abing, S.Pd., M.M - Guru Ekonomi">
+                </div>
+            </div>
+            <div class="md:flex sm:block pb-1">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-ami.png" alt="Ami Priyono, S.Sos - Guru Sosiologi">   
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/pns-tokiin.png" alt="Tokiin, S.Pd., S.E - Guru Sosiologi">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-tiara.png" alt="Tiara Rachmawati S, S.Pd - Guru Prakarya & Kewirausahaan">   
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-suherman.png" alt="Suherman Budi Laksana, S.Pd - Guru Prakarya & Kewirausahaan">
+                </div>
+            </div>
+
+              <div class="md:flex sm:block pb-1">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-sinta.png" alt="Sinta Dewi, S.Pd - Guru Sejarah">   
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-ayu.png" alt="Ayu Fauziyah, S.Pd - Guru PKN">   
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-asepandri.png" alt="Asep Andri Astriyandi, M.Pd - Guru Geografi">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-popi.png" alt="Popi Indriani, S.Pd.I - Guru Matematika">   
+                </div>
+            </div>
+            
+            <div class="md:flex sm:block pb-1">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-sri-warsini.png" alt="Sri Warsini, S.Pd - Guru Matematika">
+                </div>
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                      <img class="w-auto rounded p-0" src="img/guru/p3k-dm.png" alt="Didi Muhtadi, S.Pd - Guru PKN">   
+                  </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-isnandar.png" alt="Isnandar, S.Sos - Guru Sejarah">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-gilang.png" alt="Gilang Maulana Ibrahim, S.Sn - Guru Seni Rupa">
+                </div>
+            </div>
+            
+            <div class="md:flex sm:block pb-1">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-zipo.png" alt="Arif Hidayat, S.Pd - Guru Penjaskes">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-dc.png" alt="Didi Casmadi, S.Pd., M.Pd - Guru Penjaskes">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-taufik.png" alt="Taufikhurohman, S.Pd.I - Guru Pendidikan Agama Islam">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-din.png" alt="Din Herdiana, S.S - Guru Bahasa Jepang">
+                </div>
+            </div>
+
+              <div class="md:flex sm:block pb-1">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/p3k-dewi-sri.png" alt="Dewi Sri Kurniasih, S.Pd - Guru Fisika">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-fitriyah.png" alt="Fitriyah S.Pd - Guru Bahasa Indonesia">
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-putik.png" alt="Putik Iqlima, S.Pd - Guru Seni Budaya">   
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-farvis.png" alt="Farvis Nicola, S.Pd - Guru Fisika">
                 </div>
               </div>
 
               <div class="md:flex sm:block pb-1">
-                
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-rukiah.png" alt="Sunset in the mountains">   
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-mardliyah.png" alt="Mardliyyah, S.Pd - Guru Bahasa Jepang">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-muhai.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-rini.png" alt="Rini Apriani, S.Pd - Guru Biologi">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-sanoto.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-ayyub.png" alt="Ayyub Shoffry, S.Pd - Guru Bahasa Sunda">   
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-rinel.png" alt="Sunset in the mountains">   
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-daji.png" alt="Sunset in the mountains">
-                </div>
-              </div>
-
-              <div class="md:flex sm:block pb-1">
-                <!-- div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-noman.png" alt="Sunset in the mountains">   
-                </div -->
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-umi.png" alt="Sunset in the mountains">
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-abing.png" alt="Sunset in the mountains">
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-ami.png" alt="Sunset in the mountains">   
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/pns-tokiin.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-wini.png" alt="Wini Mardiani, S.Pd - Guru Bahasa Indonesia">   
                 </div>
               </div>
 
               <div class="md:flex sm:block pb-1">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-tiara.png" alt="Sunset in the mountains">   
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-fuji.png" alt="Fuji Rahayu, S.Pd - Guru Ekonomi">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-jason.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-anton.png" alt="Anton, S.Pd - Guru Biologi">
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-suherman.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-ari.png" alt="Ari Dianti, S.Pd - Guru Informatika">   
                 </div>
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-din.png" alt="Sunset in the mountains">   
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-heri.png" alt="Sunset in the mountains">
+                    <img class="w-auto rounded p-0" src="img/guru/nonpns-eka.png" alt="Eka Firmansyah, S.Pd - Guru Geografi">   
                 </div>
               </div>
-
-              <div class="md:flex sm:block pb-1">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-sinta.png" alt="Sunset in the mountains">   
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-fitriyah.png" alt="Sunset in the mountains">
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-putik.png" alt="Sunset in the mountains">
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-ayu_.png" alt="Sunset in the mountains">   
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-farvis.png" alt="Sunset in the mountains">
-                </div>
-              </div>
-
-              <div class="md:flex sm:block pb-1">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-septian.png" alt="Sunset in the mountains">   
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-eka.png" alt="Sunset in the mountains">
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-asep.png" alt="Sunset in the mountains">
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-mardliyah.png" alt="Sunset in the mountains">   
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-rini.png" alt="Sunset in the mountains">
-                </div>
-              </div>
-
-              <div class="md:flex sm:block pb-1">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-popi_.png" alt="Sunset in the mountains">   
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-ayyub.png" alt="Sunset in the mountains">
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-wini.png" alt="Sunset in the mountains">
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-ari.png" alt="Sunset in the mountains">   
-                </div>
-                <!-- div class="max-w-sm rounded overflow-hidden shadow-lg m-2">
-                    <img class="w-auto rounded p-0" src="img/guru/nonpns-hesti_.png" alt="Sunset in the mountains">
-                </div -->
-              </div>
-
-              
                 
               </div>
               </div>

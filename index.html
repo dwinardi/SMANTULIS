@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <title>SMAN 1 Haurgeulis</title>
-    <link rel="icon" type="image/x-icon" href="/img/logo-smantulis.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <style>
         .carousel-open:checked + .carousel-item {
             position: static;
@@ -55,43 +55,43 @@
 </head>
 <body class="transition duration-500 font-normal bg-gradient-new">
     
-    <header class=" sticky top-0 z-5">
-        <!-- component -->
+  <header class=" sticky top-0 z-5">
+    <!-- component -->
 
 <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-8000">
-  <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-    <div class="p-4 flex flex-row items-center justify-between">
-        <a class="navbar-brand" href="#">
-            <img src="/smantulis.png" alt="" width="50" height="50">
-        </a>
-      <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline ml-2">SMAN 1 Haurgeulis</a>
-      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg>
-      </button>
-    </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-      <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-orange-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="#">Home</a>
-      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="#kepala-sekolah">Kepala Sekolah</a>
-      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="#sejarah">Sejarah</a>
-      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="gtk.html">GTK</a>
-      <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://info.sman1haurgeulis.sch.id/" target="_blank">SKL</a> -->
-      <!--<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://sman1haurgeulis.sch.id/ppdb2023.html" target="_blank">PPDB 2023 Tahap I</a>
-      <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://sman1haurgeulis.sch.id/ppdb2023_2.html" target="_blank">PPDB 2023 Tahap II</a>
-      </-->
-    </nav>
-  </div>
+<div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+<div class="p-4 flex flex-row items-center justify-between">
+    <a class="navbar-brand" href="#">
+        <img src="img/smantulis.png" alt="" width="50" height="50">
+    </a>
+  <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline ml-2">SMAN 1 Haurgeulis</a>
+  <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+      <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+      <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+    </svg>
+  </button>
 </div>
-    </header>
+<nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+  <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-orange-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="#">Home</a>
+  <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="#kepala-sekolah">Kepala Sekolah</a>
+  <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="#sejarah">Sejarah</a>
+  <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="gtk.html">GTK</a>
+  <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://info.sman1haurgeulis.sch.id/" target="_blank">SKL</a> -->
+  <!--<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://sman1haurgeulis.sch.id/ppdb2023.html" target="_blank">PPDB 2023 Tahap I</a>
+  <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-200 focus:outline-none focus:shadow-outline transition ease-in-out duration-600" href="https://sman1haurgeulis.sch.id/ppdb2023_2.html" target="_blank">PPDB 2023 Tahap II</a>
+  </-->
+</nav>
+</div>
+</div>
+</header>
     <section>
         <div class="carousel relative bg-white">
             <div class="carousel-inner relative w-full">
               <!--Slide 1-->
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
                 <div class="carousel-item absolute opacity-0" style="height:auto;">
-                    <img src="./img/sl-1.jpg" alt="">
+                    <img src="img/sl-1.jpg" alt="">
                 </div>
                 <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
                 <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
@@ -99,7 +99,7 @@
                 <!--Slide 2-->
                 <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
                 <div class="carousel-item absolute opacity-0" style="height:auto;">
-                    <img src="./img/sl-2.jpg" alt="">
+                    <img src="img/sl-2.jpg" alt="">
                 </div>
                 <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
                 <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
@@ -107,7 +107,7 @@
                 <!--Slide 3-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
                 <div class="carousel-item absolute opacity-0" style="height:auto;">
-                    <img src="./img/sl-3.jpg" alt="">
+                    <img src="img/sl-3.jpg" alt="">
                 </div>
                 <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
                 <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white/30 hover:bg-blue-700/30 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
@@ -139,16 +139,28 @@
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 m-4">
     <div class="p-6 bg-white">
-    <img class="rounded-lg shadow-lg" src="./img/smantulis.gif" alt="">
+    <!--img class="rounded-lg shadow-lg" src="img/smantulis.gif" alt=""-->
+    <video class="rounded-lg shadow-lg" width="1080" height="1080" preload loop autoplay muted>
+      <source src="img/flash-smantulis.mp4" type="video/mp4">
+    </video>
     </div>
     <div class="p-6 bg-white">
-      <img class="rounded-lg shadow-lg" src="./img/kcd.gif" alt="">
+      <!--img class="rounded-lg shadow-lg" src="img/kcd.gif" alt=""-->
+      <video class="rounded-lg shadow-lg" width="1080" height="1080" preload loop autoplay muted>
+        <source src="img/flash-kcd.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="p-6 bg-white">
-      <img class="rounded-lg shadow-lg" src="./img/jabar.gif" alt="">
+      <!--img class="rounded-lg shadow-lg" src="img/jabar.gif" alt=""-->
+      <video class="rounded-lg shadow-lg" width="1080" height="1080" preload loop autoplay muted>
+        <source src="img/flash-jabar.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="p-6 bg-white">
-      <img class="rounded-lg shadow-lg" src="./img/kemdikbud.gif" alt="">
+      <!--img class="rounded-lg shadow-lg" src="img/kemdikbud.gif" alt=""-->
+      <video class="rounded-lg shadow-lg" width="1080" height="1080" preload loop autoplay muted>
+        <source src="img/flash-kemdikbud.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
   
@@ -161,7 +173,7 @@
     <div class="max-w-full border-0 shadow-sm mt-1 mb-1 p-2 bg-white rounded-md flex">
       <div class="text-justify font-sans tracking-tight text-blue-900 p-4 max-w-2xl">
         <div class="mx-auto block md:hidden bottom-0 mb-8" style="width: fit-content;">
-          <img src="./img/kepsek.png" alt="" class="bottom-0 rounded-lg shadow-lg" style="width: 300px;">
+          <img src="img/kepsek-low.jpg" alt="" class="bottom-0 rounded-lg shadow-lg" style="width: 300px;">
           <!-- <span class="block bg-blue-200 font-bold text-lg text-center p-2 rounded-full mt-2 shadow-lg">Drs. OTONG WAHYUDIN, M.Pd</span> -->
         </div>
         <p class="mb-4 text-left">Assalamu'alaikum Warahmatullahi Wabarakatuh,</p>
@@ -172,7 +184,7 @@
         <p class="mb-4 text-left">Wassalamu'alaikum Warahmatullahi Wabarakatuh.</p>
       </div>
       <div class="mx-auto hidden lg:block bottom-0 align-bottom" style="width: fit-content;">
-        <img src="./img/kepsek.png" alt="" class="bottom-0 rounded-lg shadow-lg" style="width: 300px;">
+        <img src="img/kepsek-low.jpg" alt="" class="bottom-0 rounded-lg shadow-lg" style="width: 300px;">
         <!-- <span class="block bg-blue-200 font-bold text-lg text-center p-2 rounded-full mt-2 shadow-lg">Drs. OTONG WAHYUDIN, M.Pd</span> -->
       </div>
     </div>
@@ -185,14 +197,14 @@
       </h3>
     </div>
     <div class="mx-auto block mt-8 md:hidden bottom-0 mb-2 w-full" style="width: fit-content;">
-      <img src="./img/upacara.jpg" alt="" class="bottom-0 rounded-lg shadow-lg mb-4" style="width: 300px;">
-      <img src="./img/s3.jpg" alt="" class="bottom-0 rounded-lg shadow-lg mb-4" style="width: 300px;">
+      <img src="img/upacara.jpg" alt="" class="bottom-0 rounded-lg shadow-lg mb-4" style="width: 300px;">
+      <img src="img/s3.jpg" alt="" class="bottom-0 rounded-lg shadow-lg mb-4" style="width: 300px;">
       <!-- <span class="block bg-blue-200 font-bold text-lg text-center p-2 rounded-full mt-2 shadow-lg">Drs. OTONG WAHYUDIN, M.Pd</span> -->
     </div>
     <div class="flex">
       <div class="mx-auto hidden lg:block bottom-0 align-bottom max-w-7xl lg:basis-1/2" style="width: fit-content;">
-        <img src="./img/upacara.jpg" alt="" class="bottom-0 rounded-lg shadow-lg m-4">
-        <img src="./img/s3.jpg" alt="" class="bottom-0 rounded-lg shadow-lg m-4">
+        <img src="img/upacara.jpg" alt="" class="bottom-0 rounded-lg shadow-lg m-4">
+        <img src="img/s3.jpg" alt="" class="bottom-0 rounded-lg shadow-lg m-4">
         <!-- <span class="block bg-blue-200 font-bold text-lg text-center p-2 rounded-full mt-2 shadow-lg">Drs. OTONG WAHYUDIN, M.Pd</span> -->
       </div>
       <div class="text-justify font-sans tracking-tight text-blue-900 p-4 max-w-5xl lg:basis-1/2 m-4 mb-0">
